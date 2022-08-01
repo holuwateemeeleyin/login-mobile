@@ -104,3 +104,9 @@ input {
     padding-top: 2rem;
     color: #969696;
   }
+  
+.forget{
+    display: flex;
+    justify-content: right;
+    color: #969696;
+}
