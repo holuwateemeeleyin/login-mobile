@@ -110,3 +110,12 @@ input {
     justify-content: right;
     color: #969696;
 }
+
+
+@media screen and (min-width:756px) {
+    .home{
+        width: 40rem;
+        min-height: 42rem;
+        box-shadow: 0 0.2rem 0.7rem 0 #bebebe;
+    }
+}
