@@ -3,15 +3,18 @@ import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import { MdFacebook } from 'react-icons/md'
 import { FcGoogle } from 'react-icons/fc'
-import { BiShow } from 'react-icons/bi'
+import { BiShow, BiHide } from 'react-icons/bi'
 
 export default function SignUp() {
   const userRef = useRef()
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [pwd, setPwd] = useState('')
-
+  const [pwdType, setPwdType] = useState(true)
+  
   const eye = <BiShow size='25'/>
+  const hide = <BiHide size='25'/>
+  
   // useEffect(()=>{
   //   userRef.current.focus()
   // })
@@ -23,6 +26,7 @@ export default function SignUp() {
     setPwd('')
   }
   
+  console.log(pwdType);
   return (
     <div className='signup-container'>
       <h3> Sign Up</h3>
@@ -49,11 +53,11 @@ export default function SignUp() {
           <label>Enter Password</label>
           <div className='pass-wrapper'>
             <input 
-              type='password'
+              type={pwdType ? 'password':'text'}
               value={pwd}
               onChange={(e)=> setPwd(e.target.value)}
             />
-            <i>{eye}</i>
+            <i onClick={()=> setPwdType(!pwdType)}>{ pwdType ? eye : hide }</i>
           </div>
         </div>
         <button className='button'>
