@@ -1,12 +1,12 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { useNavigate } from 'react-router-dom'
+// import { useNavigate } from 'react-router-dom'
 import { MdFacebook } from 'react-icons/md'
 import { FcGoogle } from 'react-icons/fc'
 import { BiShow, BiHide } from 'react-icons/bi'
 
 export default function SignUp() {
-  const userRef = useRef()
+  // const userRef = useRef()
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [pwd, setPwd] = useState('')
