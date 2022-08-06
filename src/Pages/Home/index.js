@@ -14,7 +14,7 @@ export default function Home() {
         <p> Create an account and access thousand of cool stuffs</p>
         <button 
           className='home-button'
-          onClick={()=> navigate('/signin')}
+          onClick={()=> navigate('/signup')}
         >
           Get Started
         </button>
