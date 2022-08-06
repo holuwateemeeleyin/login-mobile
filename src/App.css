@@ -1,5 +1,6 @@
 .app{
-    background-color: #fdfdfdec;
+    /* background-color: #fdfdfdec; */
+    background-color: #f8f8f8ec;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -53,7 +54,7 @@
     /* text-align: left; */
 }
 form{
-    margin-top: 2rem;
+    margin-top: 1.3rem;
 }
 
 .signup-container h3{
@@ -101,8 +102,10 @@ input {
   }
 
   .continue {
+    text-align: center;
     padding-top: 2rem;
     color: #969696;
+    font-weight: 500;
   }
   
 .forget{
@@ -111,6 +114,34 @@ input {
     color: #969696;
 }
 
+.social{
+    color: #0c0000;
+    font-weight: 500;
+    padding-top: 2rem;
+    display: flex;
+    font-size: 0.8rem;
+    justify-content: space-evenly;
+}
+.facebook{
+    background-color: #ffffff;
+    text-align: center;
+    min-width: 6rem;
+    padding: 8px;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 0.06rem 0.7rem 0 #bebebe;
+}
+.pass-wrapper {
+    position: relative;
+    display: flex;
+    margin-bottom: 14px;
+  }
+  i {
+    position: absolute;
+    top: 28%;
+    right: 5%;
+    cursor: pointer;
+  }
 
 @media screen and (min-width:756px) {
     .home{
