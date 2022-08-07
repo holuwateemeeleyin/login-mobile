@@ -1,7 +1,7 @@
 import React from 'react'
 import { MdFacebook } from 'react-icons/md'
 import { FcGoogle } from 'react-icons/fc'
-export default function () {
+export default function SocialLogin () {
   return (
     <>
         <div className='continue'> 
