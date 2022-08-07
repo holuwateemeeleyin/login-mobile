@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import SocialLogin from '../SocialLogin'
 export default function Signin() {
     
     const [mail, setMail] = useState('')
@@ -37,6 +38,7 @@ export default function Signin() {
                 </button>
                 <div className='already'>Don't have an account? <Link to='/signup'> Create one</Link></div>
             </form>
+            <SocialLogin/>
         </div>
     )
 }
