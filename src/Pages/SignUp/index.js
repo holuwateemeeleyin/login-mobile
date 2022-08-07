@@ -12,8 +12,8 @@ export default function SignUp() {
   const [pwd, setPwd] = useState('')
   const [pwdType, setPwdType] = useState(true)
   
-  const eye = <BiShow size='25'/>
-  const hide = <BiHide size='25'/>
+  const eye = <BiShow size='20' color='#969696'/>
+  const hide = <BiHide size='20' color='#969696'/>
   
   // useEffect(()=>{
   //   userRef.current.focus()
@@ -39,6 +39,7 @@ export default function SignUp() {
             type='text'
             value={name}
             onChange={(e)=> setName(e.target.value)}
+            placeholder='Enter your name'
           />
         </div>
         <div className='form-input'>
@@ -47,6 +48,7 @@ export default function SignUp() {
             type='email'
             value={email}
             onChange={(e)=> setEmail(e.target.value)}
+            placeholder='Enter your email'
           />
         </div>
         <div className='form-input'>
@@ -56,6 +58,7 @@ export default function SignUp() {
               type={pwdType ? 'password':'text'}
               value={pwd}
               onChange={(e)=> setPwd(e.target.value)}
+              placeholder='********'
             />
             <i onClick={()=> setPwdType(!pwdType)}>{ pwdType ? eye : hide }</i>
           </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import pic from '../../Assets/mobile.png'
+import pic from '../../Assets/login.png'
 import {Link} from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 
@@ -8,7 +8,7 @@ export default function Home() {
   const navigate = useNavigate()
   return (
     <div className='home'>
-      <img src={pic} alt='home' width='60%'/>
+      <img src={pic} alt='home' className='home-image'/>
       <div className='home-text'>
         <h4> Welcome </h4>
         <p> Create an account and access thousand of cool stuffs</p>

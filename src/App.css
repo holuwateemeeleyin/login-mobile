@@ -1,6 +1,6 @@
 .app{
     /* background-color: #fdfdfdec; */
-    background-color: #f8f8f8ec;
+    background-color: #FCFCFF;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -10,29 +10,39 @@
 .home{
     text-align: center;
 }
+.home-image{
+    width: 204.62px;
+    height: 176.22px;
+}
 .home-text{
+    font-weight:500;
+    line-height: 24px;
+    font-size: 0.75rem;
     padding-top: 2rem;
     text-align: center;
 }
 
 .home-text p {
-    color: #535353;
-    width: 70%;
+    font-size: 14px;
+    /* color: #535353; */
+    color: rgba(0, 0, 0, 0.65);
+    width: 75%;
     margin: auto;
     font-weight: 500;
+    line-height: 17px;
 }
 
 .home-button{
     margin-top: 3rem;
     width: 80%;
-    background-color: #003cff;
+    background-color: #2F3FD3;
     color: #fff;
     outline: none;
     border: none;
     border-radius: 8px;
     padding: 0.7rem;
-    font-weight: 500;
-    font-size: 1rem;
+    font-weight: 600;
+    font-size: 14px;
     cursor: pointer;
 }
 
@@ -42,8 +52,8 @@
 
 .already {
     padding-top: 0.5rem;
-    font-size: 0.8rem;
-    color: #535353;
+    font-size: 10px;
+    color: #000000;
     font-weight: 500;
     text-align: center;
 }
@@ -52,63 +62,74 @@
 /* Signup */
 .signup-container{
     /* text-align: left; */
+    width: 80%;
+    margin: auto;
 }
 form{
-    margin-top: 1.3rem;
+    margin-top: 1rem;
 }
 
 .signup-container h3{
+    font-size: 1rem;
     font-weight: bolder;
     text-align: center;
 }
 .signup-container p{
     padding-top: 0.2rem;
     color: #969696;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: 500;
     text-align: center;  
 }
 
 label{
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 0.75rem;
+    font-weight: 400;
 }
 .form-input{
-    margin-top: 10px;
+    margin-top: 5px;
 }
 input {
     width: 100%;
-    padding: 7px;
-    margin: 5px;
-    padding: 10px 25px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    padding: 4px 10px;
+    margin: 3px 0;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    border-radius: 8px;
     box-sizing: border-box;
-  }
+    outline: none;
+}
+
+input::placeholder {
+    color: #ccc;
+    font-size: 10px;
+    font-weight: 500;
+}
 
   .button {
-    margin-top: 2rem;
+    margin-top: 1.2rem;
     width: 100%;
-    background-color: #003cff;
+    background-color: #2F3FD3;
     color: #fff;
     outline: none;
     border: none;
     border-radius: 8px;
     padding: 0.7rem;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.751rem;
     cursor: pointer;
   }
 
   .continue {
+    font-size: 0.625rem;
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     color: #969696;
     font-weight: 500;
   }
   
 .forget{
+    font-size: 0.7rem;
+    font-weight: 500;
     display: flex;
     justify-content: right;
     color: #969696;
@@ -117,19 +138,20 @@ input {
 .social{
     color: #0c0000;
     font-weight: 500;
-    padding-top: 2rem;
+    padding-top: 1.2rem;
     display: flex;
     font-size: 0.8rem;
     justify-content: space-evenly;
 }
 .facebook{
+    font-size: 0.625rem;
     background-color: #ffffff;
     text-align: center;
-    min-width: 6rem;
+    min-width: 5.8rem;
     padding: 8px;
     height: auto;
     border-radius: 1rem;
-    box-shadow: 0 0.06rem 0.7rem 0 #bebebe;
+    box-shadow:  0px 0px 40px rgba(0, 0, 0, 0.05);
 }
 .pass-wrapper {
     position: relative;
@@ -138,11 +160,13 @@ input {
   }
   i {
     position: absolute;
-    top: 28%;
+    top: 13%;
     right: 5%;
     cursor: pointer;
   }
-
+a{
+    text-decoration: none;
+}
 @media screen and (min-width:756px) {
     .home{
         width: 40rem;
