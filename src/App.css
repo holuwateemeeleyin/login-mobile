@@ -128,6 +128,7 @@ input::placeholder {
   }
   
 .forget{
+    margin-top: -13px;
     font-size: 0.65rem;
     font-weight: 500;
     display: flex;
@@ -169,8 +170,52 @@ a{
 }
 @media screen and (min-width:756px) {
     .home{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 40rem;
-        min-height: 42rem;
+        height: 40rem;
+        box-shadow: 0 0.2rem 0.7rem 0 #bebebe;
+    }
+    .signup-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40rem;
+        height: 40rem;
         box-shadow: 0 0.2rem 0.7rem 0 #bebebe;
     }
 }
+
+
+.loading {
+    margin: 200px auto;
+    border: 14px solid #777777;
+    border-radius: 50%;
+    border-top: 14px solid #2F3FD3;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+
+  /* Safari */
+@-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
