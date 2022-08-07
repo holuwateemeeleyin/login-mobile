@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 // import { useNavigate } from 'react-router-dom'
 import { BiShow, BiHide } from 'react-icons/bi'
 import SocialLogin from '../SocialLogin'
+import {motion} from 'framer-motion'
 
 export default function SignUp() {
   // const userRef = useRef()
@@ -25,9 +26,14 @@ export default function SignUp() {
     setPwd('')
   }
   
-  console.log(pwdType);
+  // console.log(pwdType);
   return (
-    <div className='signup-container'>
+    <motion.div
+      className='signup-container'
+      initial={{opacity:0}}
+      animate={{opacity:1}}
+      exit={{opacity:1}}
+    >
       <h3> Sign Up</h3>
       <p>Please fill in the details and create account</p>
       <form onSubmit={handleSubmit}>
@@ -68,6 +74,6 @@ export default function SignUp() {
         <div className='already'>Already have an account? <Link to='/signin'> Sign in</Link></div>
       </form>
       <SocialLogin/>
-    </div>
+    </motion.div>
   )
 }
